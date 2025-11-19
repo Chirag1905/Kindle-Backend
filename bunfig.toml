@@ -1,0 +1,33 @@
+# Bun configuration file
+[install]
+# Configure package installation
+cache = true
+exact = false
+production = false
+optional = true
+
+# Configure scoped registries if needed
+# [install.scopes]
+# "@myorg" = "https://registry.myorg.com/"
+
+[run]
+# Configure script execution
+bun = true
+
+[test]
+# Test configuration
+timeout = 5000
+coverage = true
+preload = ["./test-setup.js"]
+
+[build]
+# Build configuration
+target = "bun"
+outdir = "./dist"
+minify = true
+splitting = true
+
+# Development settings
+[dev]
+watch = true
+hot = true
