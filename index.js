@@ -8,7 +8,7 @@ import compression from 'compression';
 import { join } from 'path';
 import bookRoute from './routes/bookroutes.js';
 import authRoute from './routes/authroutes.js';
-import './db/index.js';
+import './config/index.js';
 
 // Load environment variables
 dotenv.config();
